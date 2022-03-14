@@ -1,0 +1,252 @@
+/* .container {
+  padding: 2rem;
+  overflow: auto;
+
+  align-items: center;
+} */
+
+.main {
+  height: 100vh;
+  width: 92vw;
+  flex: 1;
+  display: flex;
+  display: flex;
+  justify-content: center;
+}
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+}
+
+.centerContent {
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+}
+.loginContainer {
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 600px;
+  height: 400px;
+  text-align: center;
+}
+.loginContainer h1 {
+  font-size: 45px;
+}
+
+.logoutBtn {
+  margin-top: 5px;
+  display: flex;
+  height: 40px;
+  padding: 0;
+  background: #9c0d0d;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.logoutBtn:hover {
+  background: #d61414;
+}
+.sideBar {
+  height: fit-content;
+  margin-left: 50px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding-bottom: 10px;
+}
+.checkoutBtn {
+  width: 350px;
+  align-self: center;
+  height: 50px;
+  background-color: rgb(63, 139, 32);
+  color: white;
+  outline: none;
+  border: none;
+  font-size: large;
+}
+
+.sideBar h2 {
+  color: #1996f7;
+  padding: 0 22px;
+  margin: 0;
+  margin-top: 12px;
+}
+.categoryList {
+  max-height: 300px;
+  color: #f39c12;
+  overflow-y: scroll; /* Hide scrollbars */
+}
+.categoryList::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+.categoryList::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+.sideBar p {
+  cursor: pointer;
+  padding: 5px 12px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  border-radius: 4px;
+  margin: 0;
+}
+.sideBar p:hover {
+  color: #ffffff;
+  background-color: #4fb0fa;
+  box-shadow: 0 1px 18px -8px black;
+}
+
+.selectSearch {
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  font-size: 22px;
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+}
+
+.selectSearch::-ms-expand {
+  display: none;
+}
+
+.selectContainer {
+  position: relative;
+  display: flex;
+  width: 13em;
+  height: 3em;
+  /* border-radius: 0.25em; */
+  border-top-left-radius: 0.25em;
+  border-bottom-left-radius: 0.25em;
+  overflow: hidden;
+}
+
+.selectContainer::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #34495e;
+  transition: 0.25s all ease;
+  pointer-events: none;
+}
+.searchOption {
+  font-size: 20px;
+  height: 40px;
+  padding: 12px;
+}
+
+.selectContainer:hover::after {
+  color: #f39c12;
+}
+.searchInput {
+  flex: 1;
+  width: 350px;
+  outline: none;
+  background-color: #fff;
+  font-size: 22px;
+  padding: 0 10px;
+  border-top-right-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+}
+.removeFiltersBtn {
+  background-color: #009578;
+  padding: 0;
+  cursor: pointer;
+  font-size: 25px;
+  border-radius: 6px;
+  margin-left: 5px;
+}
+.removeFiltersBtn:hover {
+  background-color: #0fddb4;
+  transform: scale(1.1);
+}
+/* .filterTooltip {
+  background-color: #fff;
+  left: 70%;
+  display: none;
+} */
+/* .removeFiltersBtn:hover + .filterTooltip {
+  display: inline;
+} */
+.itemRow {
+  height: 40px;
+}
+.itemContainer {
+  border-bottom: 2px solid rgb(204, 203, 203);
+  display: flex;
+  padding: 10px;
+}
+/* .restoImage {
+  width: 12rem;
+  height: 8rem;
+  background-size: cover;
+  border-radius: 8px;
+} */
+.restoImage {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+
+  /* border-radius: 8px; */
+}
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.button__text,
+.button__icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 7px;
+  color: #fff;
+  height: 100%;
+}
+
+.button__icon {
+  font-size: 1.5em;
+  background: rgba(0, 0, 0, 0.08);
+}

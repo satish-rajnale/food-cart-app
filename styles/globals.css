@@ -1,0 +1,24 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  /* background-image: url("../public/rest0-back.jpg"); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+:root {
+  --darkgray: #2c3e50;
+}
